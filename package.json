@@ -1,0 +1,11 @@
+{
+  "name": "mypersonalblog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bruno de Paula <bruno.bert.jj@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": ["packages/*"]
+  }
+}
