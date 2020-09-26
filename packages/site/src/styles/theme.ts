@@ -1,4 +1,8 @@
 export default {
+  breakpoints: {
+    small: '500px',
+    medium: '1000px'
+  },
   grid: {
     container: '130rem',
     gutter: '3.2rem'
@@ -25,6 +29,7 @@ export default {
     primaryHover: '#E20E8D',
     secondary: '#3CD3C1',
     mainBg: '#030518',
+    headerBg: '#10121b',
     boxBg: '#FAFAFA',
     texts: '#030517',
     white: '#FFFFFF',
@@ -39,5 +44,8 @@ export default {
     large: '6.0rem',
     xlarge: '6.4rem',
     xxlarge: '12.8rem'
+  },
+  layers: {
+    deep1: -1
   }
 }

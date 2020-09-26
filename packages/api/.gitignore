@@ -106,6 +106,7 @@ coverage
 # Strapi
 ############################
 
+credentials.txt
 .env
 exports
 .cache

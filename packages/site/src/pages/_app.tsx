@@ -4,8 +4,14 @@ import { NextSeo } from 'next-seo'
 import { AppProps  } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
 import theme from 'styles/theme'
 import GlobalStyle from 'styles/global.styles'
+
+library.add(fab, fas)
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -17,21 +23,21 @@ const App = ({ Component, pageProps }: AppProps) => {
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
       </Head>
       <NextSeo
-        title="React Avançado - Crie aplicações reais com NextJS, GraphQL e mais."
-        description="Aprenda a criar um Ecommerce completo, indo do Backend ao Frontend utilizando tecnologias como ReactJS, NextJS, Strapi, GraphQL, Apollo e muito mais!"
-        canonical="https://reactavancado.com.br/"
+        title="CodePills.Tech - Another Blog about Software Development."
+        description="A Blog about Software Development!"
+        canonical="https://codepills.tech/"
         openGraph={{
-          url: 'https://reactavancado.com.br/',
+          url: 'https://codepills.tech/',
           title:
-            'React Avançado - Crie aplicações reais com NextJS, GraphQL e mais.',
+            'CodePills.Tech - Another Blog about Software Development',
           description:
-            'Aprenda a criar um Ecommerce completo, indo do Backend ao Frontend utilizando tecnologias como ReactJS, NextJS, Strapi, GraphQL, Apollo e muito mais!',
-          images: [{ url: 'https://reactavancado.com.br/img/cover.png' }],
-          site_name: 'React Avançado',
-          locale: 'pt_BR'
+            'A Blog about Software Development',
+          images: [{ url: 'https://codepills.tech/img/cover.png' }],
+          site_name: 'CodePills',
+          locale: 'en_US'
         }}
         twitter={{
-          handle: '@Willian_justen',
+          handle: '@Bruno_Bertoni',
           site: '@site',
           cardType: 'summary_large_image'
         }}
